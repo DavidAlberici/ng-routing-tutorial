@@ -30,6 +30,17 @@ export class CrisisDetailComponent implements OnInit {
 
   gotoCrisisCenter() {  
     this.router.navigate(['/crisis-center']);
+    
+    // USADO EN EL TUTORIAL
+    /*
+    const crisisId = this.crisis ? this.crisis.id : null;
+
+    // Pass along the crisis id if available
+    // so that the CrisisListComponent can select that crisis.
+    // Add a totally useless `foo` parameter for kicks.
+    // Relative navigation back to the crises
+    this.router.navigate(['../', { id: crisisId, foo: 'foo' }], { relativeTo: this.route });
+    */
   }
 
 }
